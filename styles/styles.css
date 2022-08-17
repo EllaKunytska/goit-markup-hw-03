@@ -46,6 +46,7 @@ img{
     margin-right: auto;
 }
 .section{
+    padding-top: 94px;
     padding-bottom: 94px;
 }
 .section-adv{
@@ -55,7 +56,6 @@ img{
 .header-container{
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 .navigation{
     display: flex;
@@ -101,6 +101,7 @@ img{
 }
 .contacts{
     display: flex;
+    margin-left: auto;
     align-items: center;
 }
 .email{
@@ -120,7 +121,6 @@ img{
 /* ========= main ========*/
 
 .hero{
-    min-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
     background-color: var(--hero-bcg);
@@ -147,6 +147,7 @@ margin-bottom: 30px;
 .btn {
     min-width: 216;
     padding: 10px 32px;
+    border: none;
     border-radius: 4px;
     text-align: center;
     font-family: inherit;
@@ -200,6 +201,9 @@ margin-bottom: 30px;
     text-align: center;
      color: var(--title-text-color);
 }
+.job-section{
+    padding-top: 0;
+}
 .jobs{
     display: flex;
     flex-wrap: wrap;
@@ -212,8 +216,7 @@ margin-bottom: 30px;
     margin-right: var(--card-set-gap);
 }
 .team-bcg{
-    min-width: 1600px;
-    padding: 94px 215px;
+    padding: 94px 0;
     background-color: var(--secondary-bcg) ;
 }
 .team{
@@ -229,9 +232,11 @@ margin-bottom: 30px;
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    overflow: hidden;
 }
 
 .team .title{
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
@@ -245,19 +250,17 @@ margin-bottom: 30px;
     text-align: center;
     color: var(--main-text-color);
 }
-.team .name {
-    padding: 30px auto;
+.element .name {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
  /*======== футер ======== */
  .footer {
-    min-width: 1600px;
     background-color: var(--bcg-footer);
- }
-.footer-container{
     padding-top: 60px;
     padding-bottom: 60px;
-    padding-right: 215px;
-}
+ }
+
 .logo-footer{
     display: inline-block;
     margin-bottom: 20px;
@@ -284,8 +287,7 @@ color: var(--accent-color);
 /*========= Стoр Портфолио ==========*/
 .filter-container{
     display:flex;
-    padding-top: 94px;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
     justify-content: center;
 }
 .filter-position{
@@ -306,6 +308,7 @@ margin-right: 8px;
     color: var(--title-text-color);
     background-color: var(--secondary-bcg);
     border-radius: 4px;
+    border: none;
 }
 .filter-position .first-filter{
     padding: 6px 25px;
@@ -316,6 +319,7 @@ margin-right: 8px;
 .filter:focus {
     background: var(--accent-color);
     color: var(--white-text);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .cursor {
     cursor: pointer;
